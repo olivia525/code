@@ -1,0 +1,37 @@
+//1.九九乘法表
+package jiujiuchengfabiao;
+
+public class table {
+
+	public static void main(String[] args) {
+		for (int i = 1; i < 10; i++){
+			for (int j = 1; j < i; j++){
+				System.out.print(i + "x" + j + "=" + (i*j) + ",");
+			}
+			System.out.print(i + "x" + i + "=" + (i*i) + "\n");	
+		}
+	}
+
+}
+
+
+//2.等腰三角形
+package jiujiuchengfabiao;
+
+import java.util.*;
+public class dengyaosanjiaoxing {
+//	static int h=4;
+	static Scanner in=new Scanner(System.in);
+	static int h = in.nextInt();
+	public static void main(String[] args) {
+		for (int i=1; i<=h; i++){
+			for (int j=0; j<=(h-i); j++){
+				System.out.print(" ");
+			}
+			for (int j=0; j<(2*i-1); j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}		
+	}
+}
